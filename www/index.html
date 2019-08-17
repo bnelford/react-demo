@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NICE DevOps Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/services-filled.png" type="image/png">
+    <!-- Load React API -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- Load React DOM -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- Load Babel Compiler -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <style>
+      /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+      .navbar {
+        margin-bottom: 50px;
+        border-radius: 0;
+      }
+      
+      /* Remove the jumbotron's default bottom margin */ 
+      .jumbotron {
+        margin-bottom: 0;
+      }
+    
+      /* Add a gray background color and some padding to the footer */
+      footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+      }
+      .panel {
+        border: 1px solid #020202; 
+        border-radius:150 !important;
+        transition: box-shadow 0.5s;
+      }
+      .panel:hover {
+          box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+      }
+    </style>
+  </head>
+  <body>
+      <div id="header">header</div>
+      <script type="text/babel">
+        ReactDOM.render(
+          <div class="jumbotron">
+            <div class="container text-center">
+              <h1>NICE DevOps Services</h1>      
+              <p>Making the Right Way the Easy Way &trade;</p>
+            </div>
+          </div>,
+          document.getElementById('header'));
+      </script>
+  
+    <nav id="nav">nav</nav>
+    <script type="text/babel">
+      ReactDOM.render(
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Self-Service Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Administration</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>,
+      document.getElementById('nav'));
+    </script>
+    
+    <div id="services">services</div>
+    <script type="text/babel">
+        ReactDOM.render(
+          <div>
+            <div class="container">    
+              <div class="row">
+                  <a href="/sourcecontrol/sourcecontrol.html">
+                      <div class="col-sm-2">
+                          <div class="panel panel-primary">
+                              <div class="panel-heading">Source Control</div>
+                              <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/code-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                              <div class="panel-footer">Create, maintain and remove repos</div>
+                          </div>
+                      </div>
+                  </a>
+                  <a href="/usermanagement/usermanagement.html">
+                      <div class="col-sm-2">
+                          <div class="panel panel-primary">
+                              <div class="panel-heading">User Management</div>
+                              <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/groups-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                              <div class="panel-footer">Manage Your User Permissions to various Services</div>
+                          </div>
+                      </div>
+                  </a>
+                  <a href="/pipelines/pipelines.html">
+                      <div class="col-sm-2"> 
+                          <div class="panel panel-primary">
+                              <div class="panel-heading">Pipelines</div>
+                              <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/pipelines-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                              <div class="panel-footer">Create, Track and maintain software delivery pipelines</div>
+                          </div>
+                      </div>
+                  </a>
+                  <a href="/environments/environments.html">
+                      <div class="col-sm-2"> 
+                          <div class="panel panel-primary">
+                              <div class="panel-heading">Environments</div>
+                              <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/environmental-planning-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                              <div class="panel-footer">Environment Services</div>
+                          </div>
+                      </div>
+                  </a>
+                  <a href="/deployments/deployments.html">
+                      <div class="col-sm-2"> 
+                          <div class="panel panel-primary">
+                              <div class="panel-heading">Deployments</div>
+                              <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/deployment-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                              <div class="panel-footer">Request a Deployment to an environment</div>
+                          </div>
+                      </div>
+                  </a>
+                  <a href="/featuretoggles/featuretoggles.html">
+                      <div class="col-sm-2">
+                          <div class="panel panel-primary">
+                              <div class="panel-heading">Feature Toggles</div>
+                              <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/switch-on-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                              <div class="panel-footer">Create, or manage feature toggles in various environments</div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+            </div>
+      <div class="container">    
+          <div class="row">
+              <a href="/networking/networking.html">
+                  <div class="col-sm-2">
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">Network</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/firewall-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">Create, or manage network, firewall or load balancer rules in various environments</div>
+                      </div>
+                  </div>
+              </a>
+              <a href="/verification/verification.html">
+                  <div class="col-sm-2"> 
+                          <div class="panel panel-primary">
+                              <div class="panel-heading">Verification</div>
+                              <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/system-information-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                              <div class="panel-footer">Verify something is working as intended</div>
+                          </div>
+                  </div>
+              </a>
+              <div class="col-sm-2"> 
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">Cost Control</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/general-ledger-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">Request New Product, Check Budgets</div>
+                      </div>
+              </div>
+              <a href="/monitoring/monitoring.html">
+                  <div class="col-sm-2"> 
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">Monitoring</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/heart-monitor-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">Create, Update and view monitoring services</div>
+                      </div>
+                  </div>
+              </a>
+              <div class="col-sm-2"> 
+                  <div class="panel panel-primary">
+                      <div class="panel-heading">Areas</div>
+                      <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/globe-earth-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                      <div class="panel-footer">Request a new area to install a CXOne Instance</div>
+                  </div>
+              </div>
+              <a href="/cab/cab.html">
+                  <div class="col-sm-2"> 
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">CAB</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/back-sorting-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">Create, update, approve CAB requests</div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+      <div class="container">    
+          <div class="row">
+              <a href="/bugs/bugs.html">
+                  <div class="col-sm-2"> 
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">Report a Bug in The DevOps Services</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/bug-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">Report a bug in the NDS Services</div>
+                      </div>
+                  </div>
+              </a>
+              <a href="/feedback/feedback.html">
+                  <div class="col-sm-2"> 
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">Submit Feedback</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/comments-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">Submit Feedback, ideas or other comments to the DevOps team</div>
+                      </div>
+                  </div>
+              </a>
+              <a href="/contactus/contactus.html">
+                  <div class="col-sm-2"> 
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">Find DevOps Engineer in My Area</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/ringer-volume-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">Contact a DevOps Engineer in my timezone or area</div>
+                      </div>
+                  </div>
+              </a>
+              <a href="/postmortems/postmortems.html">
+                  <div class="col-sm-2"> 
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">Post Mortems</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/death-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">Hold a Post mortem, templates, and review past learning</div>
+                      </div>
+                  </div>
+              </a>
+              <a href="/logs/logs.html">
+                  <div class="col-sm-2"> 
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">Logs</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios/500/000000/overview-pages-3-filled.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">What has been logged and completed?</div>
+                      </div>
+                  </div>
+              </a>
+              <a href="/events/events.html">
+                  <div class="col-sm-2"> 
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">Events</div>
+                          <div class="panel-body"><img src="https://img.icons8.com/ios-filled/500/000000/fires.png" class="img-responsive" style={{width:'100%'}} alt="Image"></img></div>
+                          <div class="panel-footer">Have an Event? Click Here</div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+    </div>,
+      document.getElementById('services'));
+    </script>
+
+    <footer id="footer">footer</footer>
+      <script type="text/babel">
+          ReactDOM.render(
+              <footer class="container-fluid text-center">
+                  <p>&copy; NICE inContact 2019</p>  
+                  <a href="https://icons8.com">Icon pack by Icons8</a>
+              </footer>,
+              document.getElementById('footer'));
+      </script>
+  </body>
+</html>

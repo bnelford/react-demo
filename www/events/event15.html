@@ -1,0 +1,129 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Test React</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="icon" href="https://img.icons8.com/ios/50/000000/services-filled.png" type="image/png">
+        <!-- Load React API -->
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <!-- Load React DOM -->
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <!-- Load Babel Compiler -->
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <style>
+            /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+            .navbar {
+                margin-bottom: 50px;
+                border-radius: 0;
+            }
+    
+            /* Remove the jumbotron's default bottom margin */ 
+                .jumbotron {
+                margin-bottom: 0;
+            }
+    
+            /* Add a gray background color and some padding to the footer */
+            footer {
+                background-color: #f2f2f2;
+                padding: 25px;
+            }
+            .panel {
+                border: 1px solid #020202; 
+                border-radius:150 !important;
+                transition: box-shadow 0.5s;
+            }
+            .panel:hover {
+                box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="header">header</div>
+        <script type="text/babel">
+            ReactDOM.render(
+            <div class="jumbotron">
+                <div class="container text-center">
+                <h1>NICE DevOps Services</h1>      
+                <p>Making the Right Way the Easy Way &trade;</p>
+                </div>
+            </div>,
+            document.getElementById('header'));
+        </script>
+    
+        <nav id="nav">nav</nav>
+        <script type="text/babel">
+          ReactDOM.render(
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Self-Service Home</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Administration</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+                    </ul>
+                </div>
+              </div>
+            </nav>,
+          document.getElementById('nav'));
+        </script>
+    
+    <div id="services">services</div>
+    <script type="text/babel">
+        ReactDOM.render(
+            <div>
+                <img src="https://sapling-inc.com/wp-content/gallery/sbp-series/Sapling-406-Wall-Mount-Red-075104.jpg" width="200" align="right" />
+                <p>Incident 15 - Internal Beta Customers Effected by Login (Internal) P3</p>
+                <p>Screenshot of issue if available for quicker understanding</p>
+                <p>bridge link or phone number, teams chat link</p>
+                <p>Click here to invite someone to this bridge</p>
+                <p>Total Impact Time: 2:00:00 (Stopwatch style) (Detail: 2019/8/1 0500 UTC - 2019/8/1 0700 UTC also browser local time)</p>
+                <p>Impact Timeline</p>
+                <img src="https://img.officetimeline.com/website/Content/templates/timeline-templates/pages-timeline/timeline-in-pages-tutorial.png" width="800" align="center" />
+                <p>Customers Affected (number and list)</p>
+                <p>Customers notifications sent:</p>
+                    <p>Event open: 2019/8/1 0501 UTC</p>
+                    <p>Event continuing: 2019/8/1 0530 UTC</p>
+                    <p>Event continuing: 2019/8/1 0600 UTC</p>
+                    <p>Event continuing: 2019/8/1 0630 UTC</p>
+                    <p>Event resolved: 2019/8/1 0700 UTC</p>
+                <p>Root Cause</p>
+
+                <p>Incident Commander</p>
+                <p>Incident Scribe</p>
+                <p>Incident participants</p>
+                
+                <p>Troubleshooting Section</p>
+                <p>Actions performed and by which person</p>
+                <p>Files uploaded:</p>
+
+                <p></p>
+            </div>,
+      document.getElementById('services'));
+    </script>
+
+        <footer id="footer">footer</footer>
+        <script type="text/babel">
+            ReactDOM.render(
+                <footer class="container-fluid text-center">
+                    <p>&copy; NICE inContact 2019</p>  
+                    <a href="https://icons8.com">Icon pack by Icons8</a>
+                </footer>,
+                document.getElementById('footer'));
+        </script>
+    </body>
+    </html>

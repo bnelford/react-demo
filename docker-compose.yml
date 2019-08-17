@@ -1,0 +1,10 @@
+version: '3'
+services:
+  Dashboard:
+    container_name: reactStuff
+    image: httpd:alpine
+    volumes:
+      - ./www:/usr/local/apache2/htdocs/
+    restart: always
+    ports:
+     - "8080:80"
